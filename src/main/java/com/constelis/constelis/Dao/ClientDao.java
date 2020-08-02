@@ -38,7 +38,7 @@ public class ClientDao {
     }
 
     public Client addClient(Client client) {
-        List<Contact> contacts = new ArrayList<>(){};
+        List<Contact> contacts = new ArrayList<>();
         client.setContacts(contacts);
         return repository.save(client);
     }
